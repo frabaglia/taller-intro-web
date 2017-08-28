@@ -19,6 +19,7 @@ h1{
 a{
   text-decoration: none;
   color: white;
+  color: 32px;
 }
 a:active{
   text-decoration: none;
@@ -34,8 +35,12 @@ a:active{
   justify-content: center;
   flex-direction: column;
 }
-
-
+#index a{
+  font-size: 50px;
+  color: #222;
+  display: flex;
+  align-items: center;
+}
 /*------------------------------------*/
 #about-me{
   height: 100%;
@@ -47,6 +52,7 @@ flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px;
 }
 ul{
   display: flex;
@@ -66,18 +72,76 @@ ul li{
   background-color: black;
   color: white;
 }
+ul li:hover{
+  background: white;
+  color: black;
+}
 ul li a{
   color: white;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
 }
+ul li a:hover{
+  color: black;
+}
+
 .active{
   background: white;
-
 }
 .active a{
   color:black;
 }
 
+
 #work {
-  font-size: 3rem;
+  font-size: 64px;
+  margin: 0.5rem 0 2rem 0;
+}
+#work h1{
+  font-weight: 100;
+}
+#work span{
+  font-weight: 500;
+}
+
+#social-networks a{
+  font-size: 50px;
+  color: #222;
+  align-items: center;
+}
+#social-networks img{
+  max-width: 50px;
+}
+#social-networks a:hover{
+  opacity: 0.5;
+}
+
+
+
+#curso{
+  height: 100%;
+}
+#curso-first-child{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 80px;
+}
+#curso-first-child h4{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#curso-first-child h1{
+  margin-top: 60px;
+}
+#curso-first-child h1 a{
+  color: #222;
+}
+hr{
+  width: 100%;
+border: 1px solid #222;
+margin-top: 30px;
+margin-bottom: 30px;
 }
